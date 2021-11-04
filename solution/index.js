@@ -21,6 +21,12 @@ module.exports = class MySet {
         return this.collection.values()
     }
 
+    keys() {
+        return this.collection.values()
+    } 
+
+    values = this.keys;
+
     get size() {
         return this.collection.length
     }
